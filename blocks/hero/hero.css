@@ -1,5 +1,5 @@
 .hero-container .hero-wrapper {
-  max-width: 0px;
+  max-width: unset;
   padding: 0;
 }
 
