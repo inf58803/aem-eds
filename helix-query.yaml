@@ -6,14 +6,10 @@ indices:
       - /snippets/**
     target: /query-index.json
     properties:
-      author:
-        select: head > meta[name="author"]
-        value: |
-          attribute(el, 'content')
       title:
-        select: main h1:first-of-type
+        select: meta[name="title"]
         value: |
-          textContent(el)
+         attribute(el, 'content')
       description: 
         select: meta[name="description"]
         value: | 
