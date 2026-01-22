@@ -9,7 +9,7 @@ export default async function decorate(block) {
         const li = document.createElement('li');
         li.innerHTML= `
           <a href="${item.path}">
-          <img src="${item.image}" alt="${item.title}" loading="lazy" >
+          <img src="${item.image}" alt="${item.title}" loading="lazy" > </a>
             <h3>${item.title}</h3>
             <p>${item.description}</p>
         `;
