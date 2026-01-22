@@ -1,20 +1,21 @@
 indices:
   english: &default
     include:
-      - /**
+      - /magazine
     exclude:
+      - /query-index
       - /snippets/**
     target: /query-index.json
     properties:
       title:
-        select: meta[property="og:title"]
+        select: head > meta[property="og:title"]
         value: |
           attribute(el, 'content')
       description: 
-        select: meta[name="description"]
+        select: head > meta[name="description"]
         value: | 
           attribute(el, 'content')
       url:
-        select: meta[property="og:url"]
+        select: head > meta[property="og:url"]
         value: |
           attribute(el, 'content')
