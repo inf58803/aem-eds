@@ -1,10 +1,10 @@
 .photographers.block {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 48px;
     max-width: 300px;
 }
+
 .photographers.block img {
     max-width: 200px;
     border-radius: 50%;
