@@ -146,6 +146,7 @@ header nav .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+  margin-bottom: 30px;
 }
 
 header nav .nav-brand img {
@@ -171,6 +172,8 @@ header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
   font-size: var(--body-font-size-s);
+  justify-content: flex-end;
+  font-family: SansSerif;
 }
 
 header nav .nav-sections li {
@@ -212,6 +215,7 @@ header nav .nav-drop > ul > li {
     display: flex;
     gap: 24px;
     margin: 0;
+    align-items: center;
   }
 
   header nav .nav-sections > * > ul > li {
