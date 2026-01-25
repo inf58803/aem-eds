@@ -38,6 +38,10 @@ header nav p {
 header nav a:any-link {
   color: currentcolor;
 }
+header nav a:hover {
+   padding: 15px 17px;
+   background-color: #ffea00;
+}
 
 @media (width >= 900px) {
   header .nav-wrapper {

@@ -162,8 +162,6 @@ a:any-link {
 
 a:hover {
   color: var(--link-hover-color);
-  padding: 15px 17px;
-  background-color: #ffea00;
 }
 
 /* buttons */
