@@ -1,9 +1,9 @@
 export default async function decorate(block) {
     const resp = await fetch('/articles.json');
-     if (!resp.ok){
-      console.error('Failed to load articles.json');
-      return;
-     }
+    if (!resp.ok) {
+        console.error('Failed to load articles.json');
+        return;
+    }
     const json = await resp.json();
 
     const ul = document.createElement('ul');
@@ -14,23 +14,23 @@ export default async function decorate(block) {
         const link = document.createElement('a');
         link.href = item.path;
 
-        if(item.image) {
+        if (item.image) {
             const img = document.createElement('img');
             img.src = item.image;
-            img.alt = item.title||'';
+            img.alt = item.title || '';
             link.appendChild(img);
         }
 
         const title = document.createElement('h3');
-        title.textContent= item.title;
+        title.textContent = item.title;
         link.appendChild(title);
 
         li.appendChild(link);
 
         const desc = document.createElement('p');
-        desc.textContent= item.description;
+        desc.textContent = item.description;
         li.appendChild(desc);
-        
+
         ul.appendChild(li);
     });
     block.replaceChildren(ul);
