@@ -1,9 +1,9 @@
 export default async function decorate(block) {
-    const resp = await fetch('/articles.json')
-     if(!resp.ok) {
-        console.error('Failed to load articles.json');
-        return;
-    }
+    const resp = await fetch('/articles.json');
+     if (!resp.ok){
+      console.error('Failed to load articles.json');
+      return;
+     }
     const json = await resp.json();
 
     const ul = document.createElement('ul');
