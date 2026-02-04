@@ -1,4 +1,24 @@
 .social.block {
     display: flex;
+  gap: 15px;
+  justify-content: left;
+  margin: 10px 0;
+}
+.social.block a.button {
+display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+    background-color: unset;
+
+}
+.social.block .facebook { background-image: url('https://img.icons8.com/color/94/facebook-new.png'); }
+.social .instagram { background-image: url('https://img.icons8.com/3d-fluency/94/instagram-logo.png'); }
+@media(max-width:600px) {
+    .social.block {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 16px;
+}
 }

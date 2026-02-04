@@ -1,12 +1,26 @@
 .photographers.block {
-    display: flex;
-    align-items: flex-start;
-    gap: 48px;
-    max-width: 300px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 25px;
 }
 
 .photographers.block img {
-    max-width: 200px;
     border-radius: 50%;
     object-fit: cover;
+    width: 164px;
+    height: 164px;
+}
+.photographers.block h2 {
+    margin-top: 0;
+    font-family: var(--fontFamilySerif);
+    margin-bottom: 13.5px;
+    font-size: 24px;
+}
+.photographers.block {
+    margin-top: 0;
+    font-family: var(--fontFamilySansSerif);
+    text-transform: uppercase;
+    font-size: 14px;
 }

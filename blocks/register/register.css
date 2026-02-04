@@ -1,35 +1,35 @@
 .register.block form {
     max-width: 600px;
     padding: 24px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--light-color);
     border-radius: 8px;
-    background: #fafafa;
+    background: var(--light-color);
     display: grid;
     gap: 16px;
 }
 .register.block input {
    padding: 10px 12px;
-    font-size: 14px;
-    border: 1px solid #ccc;
+    font-size: var(--fontSizeSmall);
+    border: 1px solid var(--light-color);
     border-radius: 4px;
 }
 
 .register.block input:focus {
     outline: none;
-    border-color: #1473e6;
+    border-color: var(--link-hover-color);
 }
 
 .register.block button {
        width: fit-content;
     padding: 10px 24px;
-    font-size: 14px;
+    font-size: var(--fontSizeSmall);
     font-weight: 600;
 }
 .register.block button:hover {
-    background-color: #0d66d0;
+    background-color: var( --link-color);
 }
 
 .register.block .message {
-    color: #2e7d32;
+    color: var(--link-green-color);
     font-weight: 600;
 }

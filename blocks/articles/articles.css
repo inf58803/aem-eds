@@ -1,5 +1,40 @@
-.article-list {
+.articles.block {
+    display: flex;;
+    flex-wrap: wrap;
+    justify-content: normal;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.articles .article-list {
     display: flex;
     gap: 24px;
     list-style: none;
+       h3 {
+        color: var(--text-color);
+        font-family: var(--fontFamilySansSerif);
+        font-size: var(--heading-font-size-xs);
+        font-weight: 600;
+        text-transform: uppercase;
+       }
+       p {
+        color: var(--dark-color);
+        font-size: var(--fontSizeSmall);
+        margin-top: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        white-space: nowrap;
+        width: 260px;
+       }
+}
+
+@media(max-width:600px) {
+   .articles .article-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+} 
 }
