@@ -53,6 +53,7 @@ header nav p {
 header nav a:any-link {
   color: currentcolor;
 }
+
 header nav a:hover {
    padding: 15px 17px;
    background-color: var(--button-primary);
@@ -192,7 +193,6 @@ header nav .nav-sections ul {
   padding-left: 0;
   font-size: var(--body-font-size-s);
   justify-content: flex-end;
-  font-family: SansSerif;
 }
 
 header nav .nav-sections li {
