@@ -5,7 +5,8 @@
 .carousel-slide {
   width: 100%;
 }
-.carousel-slide > div:nth-child(2) {
+@media (min-width:778px) {
+    .carousel-slide > div:nth-child(2) {
     background-color: var(--background-color);
     float: left;
     height: 180px;
@@ -15,6 +16,7 @@
     padding-right: 28px;
     position: relative;
     width: auto;
+}  
 }
 
 .carousel-dots {

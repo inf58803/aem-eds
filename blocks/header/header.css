@@ -23,10 +23,14 @@ header nav {
   align-items: center;
   gap: 0 24px;
   margin: auto;
-  max-width: 1248px;
   height: 100px;
+  max-width: 1248px;
   padding: 0 24px;
   font-family: var(--body-font-family);
+
+   @media (max-width:778px) { 
+      height: auto;
+   }
 }
 
 header nav[aria-expanded='true'] {

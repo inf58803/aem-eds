@@ -1,37 +1,35 @@
 export default async function decorate(block) {
-    const resp = await fetch('/articles.json');
-    if (!resp.ok) {
-        console.error('Failed to load articles.json');
-        return;
+  const resp = await fetch('/articles.json');
+
+  if (!resp.ok) {
+    return;
+  }
+
+  const json = await resp.json();
+
+  const ul = document.createElement('ul');
+  ul.className = 'article-list';
+
+  json.data.forEach((item) => {
+    const li = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = item.path;
+
+    if (item.image) {
+      const img = document.createElement('img');
+      img.src = item.image;
+      img.alt = item.title || '';
+      link.appendChild(img);
     }
-    const json = await resp.json();
 
-    const ul = document.createElement('ul');
-    ul.className = 'article-list';
+    const title = document.createElement('h3');
+    title.textContent = item.title;
+    link.appendChild(title);
 
-    json.data.forEach((item) => {
-        const li = document.createElement('li');
-        const link = document.createElement('a');
-        link.href = item.path;
+    li.appendChild(link);
+    ul.appendChild(li);
+  });
 
-        if (item.image) {
-            const img = document.createElement('img');
-            img.src = item.image;
-            img.alt = item.title || '';
-            link.appendChild(img);
-        }
-
-        const title = document.createElement('h3');
-        title.textContent = item.title;
-        link.appendChild(title);
-
-        li.appendChild(link);
-
-        const desc = document.createElement('p');
-        desc.textContent = item.description;
-        li.appendChild(desc);
-
-        ul.appendChild(li);
-    });
-    block.replaceChildren(ul);
+  block.textContent = '';
+  block.appendChild(ul);
 }
