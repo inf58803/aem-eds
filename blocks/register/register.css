@@ -10,7 +10,7 @@
 
 .register.block input {
     padding: 10px 12px;
-    font-size: var(--fontSizeSmall);
+    font-size: var(--font-size-small);
     border: 1px solid var(--light-color);
     border-radius: 4px;
 }
@@ -23,7 +23,7 @@
 .register.block button {
     width: fit-content;
     padding: 10px 24px;
-    font-size: var(--fontSizeSmall);
+    font-size: var(--font-size-small);
     font-weight: 600;
 }
 

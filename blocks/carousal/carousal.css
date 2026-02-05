@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-@media (min-width:778px) {
+@media (width >= 778px) {
     .carousel-slide>div:nth-child(2) {
         background-color: var(--background-color);
         float: left;
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 20px 0 10px;
+    margin: 20px 0 10px;
 }
 
 .carousel-dot {

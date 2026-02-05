@@ -18,8 +18,8 @@
     color: var(--text-color);
     float: left;
     padding: 1em 2.5em;
-    font-size: var(--fontSizeSmall);
-    font-weight: var(--fontWeightBold);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
 
     text-transform: uppercase;
   }

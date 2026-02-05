@@ -16,13 +16,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     width: 48px;
     height: 48px;
-
-
     border-radius: 4px;
-
     text-decoration: none;
     font-size: 0;
     background-repeat: no-repeat;
