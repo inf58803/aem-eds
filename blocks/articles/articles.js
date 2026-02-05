@@ -1,5 +1,9 @@
 export default async function decorate(block) {
-    const resp = await fetch('/articles.json')
+    const resp = await fetch('/articles.json');
+    if (!resp.ok) {
+        console.error('Failed to load articles.json');
+        return;
+    }
     const json = await resp.json();
 
     const ul = document.createElement('ul');
@@ -7,12 +11,26 @@ export default async function decorate(block) {
 
     json.data.forEach((item) => {
         const li = document.createElement('li');
-        li.innerHTML= `
-          <a href="${item.path}">
-          <img src="${item.image}" alt="${item.title}" loading="lazy" > </a>
-            <h3>${item.title}</h3>
-            <p>${item.description}</p>
-        `;
+        const link = document.createElement('a');
+        link.href = item.path;
+
+        if (item.image) {
+            const img = document.createElement('img');
+            img.src = item.image;
+            img.alt = item.title || '';
+            link.appendChild(img);
+        }
+
+        const title = document.createElement('h3');
+        title.textContent = item.title;
+        link.appendChild(title);
+
+        li.appendChild(link);
+
+        const desc = document.createElement('p');
+        desc.textContent = item.description;
+        li.appendChild(desc);
+
         ul.appendChild(li);
     });
     block.replaceChildren(ul);

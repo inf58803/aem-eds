@@ -3,7 +3,7 @@ footer {
   font-size: var(--body-font-size-xs);
 }
 
-footer .footer > div {
+footer .footer>div {
   margin: auto;
   max-width: 1200px;
   padding: 40px 24px 24px;
@@ -13,8 +13,67 @@ footer .footer p {
   margin: 0;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
+@media (width >=900px) {
+  footer .footer>div {
     padding: 40px 32px 24px;
   }
+}
+
+.footer.block {
+  background-color: black;
+}
+
+.footer.block .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+   @media(max-width:600px) {
+     flex-direction: column;
+   }
+    
+   
+
+  a {
+    color: var(--background-color);
+    font-size: large;
+    padding: 20px;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 12px;
+
+    li a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 15px;
+      height: 15px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0;
+      background-repeat: no-repeat;
+      background-color: var(--background-color);
+      background-position: center;
+      background-size: 20px 20px;
+    }
+  }
+
+  a[href*="instagram"] {
+    background-image: url('/icons/instagram.svg');
+  }
+
+  a[href*="facebook"] {
+    background-image: url('/icons/facebook.svg');
+  }
+
+  a[href*="x.com"] {
+    background-image: url('/icons/x.svg');
+  }
+
+
 }
