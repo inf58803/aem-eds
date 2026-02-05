@@ -1,0 +1,12 @@
+.teaser.block {
+    background-color: #fff;
+    float: left;
+    height: 180px;
+    margin-top: -180px;
+    min-height: 180px;
+    padding-bottom: 0;
+    padding-left: 28px;
+    padding-right: 28px;
+    position: relative;
+    width: 71pc;
+}

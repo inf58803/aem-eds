@@ -1,0 +1,42 @@
+.carousel-slides {
+  position: relative;
+}
+
+.carousel-slide {
+  width: 100%;
+}
+.carousel-slide > div:nth-child(2) {
+    background-color: var(--background-color);
+    float: left;
+    height: 180px;
+    margin-top: -180px;
+    min-height: 180px;
+    padding-bottom: 0;
+    padding-right: 28px;
+    position: relative;
+    width: auto;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px 0 10px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--light-color);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0 ;
+
+}
+
+.carousel-dot.active {
+  background: #000;
+  transition: scale;
+}

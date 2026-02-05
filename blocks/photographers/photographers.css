@@ -24,3 +24,34 @@
     text-transform: uppercase;
     font-size: 14px;
 }
+
+.photographers.block p {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+
+     a {
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        line-height: 0;
+     }
+
+          a[href*="instagram"] {
+              background-image: url('/icons/instagram.svg');
+          }
+    
+          a[href*="facebook"] {
+              background-image: url('/icons/facebook.svg');
+          }
+    
+          a[href*="x.com"] {
+              background-image: url('/icons/x.svg');
+          }
+}

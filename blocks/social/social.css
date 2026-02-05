@@ -1,24 +1,41 @@
 .social.block {
     display: flex;
-  gap: 15px;
-  justify-content: left;
-  margin: 10px 0;
+    align-items: center;
+    gap: 24px;
 }
-.social.block a.button {
-display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-size: contain;
-  background-repeat: no-repeat;
-    background-color: unset;
 
+.social.block .button-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;;
 }
-.social.block .facebook { background-image: url('https://img.icons8.com/color/94/facebook-new.png'); }
-.social .instagram { background-image: url('https://img.icons8.com/3d-fluency/94/instagram-logo.png'); }
-@media(max-width:600px) {
-    .social.block {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 16px;
+
+.social.block a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+   
+    border-radius: 4px;
+
+    text-decoration: none;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    background-color: unset;
 }
+
+.social.block a[href*="instagram"] {
+    background-image: url('/icons/instagram.svg');
+}
+.social.block a[href*="facebook"] {
+    background-image: url('/icons/facebook.svg');
+}
+.social.block a[href*="x.com"] {
+    background-image: url('/icons/x.svg');
 }
