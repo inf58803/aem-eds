@@ -1,7 +1,8 @@
 .footer-text.block {
-    color: white;
+    color: var(--background-color);
+    font-family: var(--font-family-serif);
 
     a {
-        color: white;
+        color: var(--background-color);
     }
 }

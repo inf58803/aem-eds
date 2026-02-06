@@ -11,6 +11,7 @@
   order: 1;
   background-color: var(--light-color);
   padding-left: 10px;
+  font-family: var(--font-family-serif);
 
   .button-container a {
     background-color: var(--button-primary);
@@ -22,7 +23,7 @@
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
   }
-  
+
 }
 
 .columns>div>.columns-img-col {

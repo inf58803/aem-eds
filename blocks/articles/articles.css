@@ -16,7 +16,7 @@
 
     h3 {
         color: var(--text-color);
-        font-family: var(--font-family-sans-serif);
+        font-family: var(--font-family-serif);
         font-size: var(--heading-font-size-xs);
         font-weight: 600;
         text-transform: uppercase;

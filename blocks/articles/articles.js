@@ -27,6 +27,11 @@ export default async function decorate(block) {
     link.appendChild(title);
 
     li.appendChild(link);
+
+    const desc = document.createElement('p');
+    desc.textContent = item.description;
+    li.appendChild(desc);
+
     ul.appendChild(li);
   });
 
