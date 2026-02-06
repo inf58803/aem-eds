@@ -37,7 +37,7 @@ footer .footer p {
 
   a {
     color: var(--background-color);
-    font-size: large;
+    font-size: var(--body-font-size-m);
     padding: 20px;
   }
 
