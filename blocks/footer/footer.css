@@ -20,19 +20,20 @@ footer .footer p {
 }
 
 .footer.block {
-  background-color: black;
+  background-color: var(--text-color);
 }
 
 .footer.block .default-content-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: var(--font-family-serif);
 
-   @media(max-width:600px) {
-     flex-direction: column;
-   }
-    
-   
+  @media(width <=600px) {
+    flex-direction: column;
+  }
+
+
 
   a {
     color: var(--background-color);

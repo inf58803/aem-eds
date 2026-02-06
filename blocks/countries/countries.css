@@ -1,7 +1,0 @@
-.section.countries-container {
-    background-color: var(--link-hover-color);
-}
-.country-item {
-    border-bottom: 1px solid var(--light-color);
-    padding: 12px 0;
-}

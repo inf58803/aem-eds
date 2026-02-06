@@ -24,6 +24,7 @@
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --font-family-serif: sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -55,7 +56,7 @@
   src: local('Arial');
 }
 
-@media (width >= 900px) {
+@media (width >=900px) {
   :root {
     /* body sizes */
     --body-font-size-m: 18px;
@@ -69,7 +70,7 @@
     --heading-font-size-m: 22px;
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
-    --fontSizeSmall: 14px;
+    --font-size-small: 14px;
   }
 }
 
@@ -115,12 +116,29 @@ h6 {
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+}
+
+h4 {
+  font-size: var(--heading-font-size-m);
+}
+
+h5 {
+  font-size: var(--heading-font-size-s);
+}
+
+h6 {
+  font-size: var(--heading-font-size-xs);
+}
 
 p,
 dl,
@@ -145,7 +163,7 @@ pre {
   white-space: pre;
 }
 
-main > div {
+main>div {
   margin: 40px 16px;
 }
 
@@ -230,22 +248,22 @@ main img {
 }
 
 /* sections */
-main > .section {
+main>.section {
   margin: 40px 0;
 }
 
-main > .section > div {
+main>.section>div {
   max-width: 1200px;
   margin: auto;
   padding: 0 24px;
 }
 
-main > .section:first-of-type {
+main>.section:first-of-type {
   margin-top: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
+@media (width >=900px) {
+  main>.section>div {
     padding: 0 32px;
   }
 }

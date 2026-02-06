@@ -1,4 +1,4 @@
-.columns > div {
+.columns>div {
   display: flex;
   flex-direction: column;
 }
@@ -11,6 +11,7 @@
   order: 1;
   background-color: var(--light-color);
   padding-left: 10px;
+  font-family: var(--font-family-serif);
 
   .button-container a {
     background-color: var(--button-primary);
@@ -18,28 +19,28 @@
     color: var(--text-color);
     float: left;
     padding: 1em 2.5em;
-    font-size: var(--fontSizeSmall);
-    font-weight: var(--fontWeightBold);
-
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase;
   }
+
 }
 
-.columns > div > .columns-img-col {
+.columns>div>.columns-img-col {
   order: 0;
 }
 
-.columns > div > .columns-img-col img {
+.columns>div>.columns-img-col img {
   display: block;
 }
 
-@media (width >= 900px) {
-  .columns > div {
+@media (width >=900px) {
+  .columns>div {
     align-items: center;
     flex-direction: unset;
   }
 
-  .columns > div > div {
+  .columns>div>div {
     flex: 1;
     order: unset;
   }

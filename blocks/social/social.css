@@ -8,20 +8,17 @@
     display: flex;
     align-items: center;
     background-color: #fff;
-    border-radius: 2px;;
+    border-radius: 2px;
+    ;
 }
 
 .social.block a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     width: 48px;
     height: 48px;
-
-   
     border-radius: 4px;
-
     text-decoration: none;
     font-size: 0;
     background-repeat: no-repeat;
@@ -33,9 +30,11 @@
 .social.block a[href*="instagram"] {
     background-image: url('/icons/instagram.svg');
 }
+
 .social.block a[href*="facebook"] {
     background-image: url('/icons/facebook.svg');
 }
+
 .social.block a[href*="x.com"] {
     background-image: url('/icons/x.svg');
 }

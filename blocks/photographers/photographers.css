@@ -3,7 +3,11 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 25px;
+    gap: 25px;
+    margin-top: 0;
+    font-family: var(--font-family-serif);
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .photographers.block img {
@@ -12,17 +16,12 @@
     width: 164px;
     height: 164px;
 }
+
 .photographers.block h2 {
     margin-top: 0;
-    font-family: var(--fontFamilySerif);
+    font-family: var(--font-family-serif);
     margin-bottom: 13.5px;
     font-size: 24px;
-}
-.photographers.block {
-    margin-top: 0;
-    font-family: var(--fontFamilySansSerif);
-    text-transform: uppercase;
-    font-size: 14px;
 }
 
 .photographers.block p {
@@ -30,7 +29,7 @@
     gap: 16px;
     margin-top: 12px;
 
-     a {
+    a {
         width: 30px;
         height: 30px;
         border-radius: 4px;
@@ -41,17 +40,17 @@
         background-position: center;
         background-size: contain;
         line-height: 0;
-     }
+    }
 
-          a[href*="instagram"] {
-              background-image: url('/icons/instagram.svg');
-          }
-    
-          a[href*="facebook"] {
-              background-image: url('/icons/facebook.svg');
-          }
-    
-          a[href*="x.com"] {
-              background-image: url('/icons/x.svg');
-          }
+    a[href*="instagram"] {
+        background-image: url('/icons/instagram.svg');
+    }
+
+    a[href*="facebook"] {
+        background-image: url('/icons/facebook.svg');
+    }
+
+    a[href*="x.com"] {
+        background-image: url('/icons/x.svg');
+    }
 }

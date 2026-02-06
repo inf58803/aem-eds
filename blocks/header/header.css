@@ -6,6 +6,7 @@
     z-index: 1000;
     background: var(--background-color);
 }
+
 /* header and nav layout */
 header .nav-wrapper {
   background-color: var(--background-color);
@@ -23,10 +24,16 @@ header nav {
   align-items: center;
   gap: 0 24px;
   margin: auto;
-  max-width: 1248px;
   height: 100px;
+  max-width: 1248px;
   padding: 0 24px;
   font-family: var(--body-font-family);
+}
+
+@media (width < 778px) { 
+  header nav {
+    height: auto;
+  } 
 }
 
 header nav[aria-expanded='true'] {
@@ -46,6 +53,7 @@ header nav p {
 header nav a:any-link {
   color: currentcolor;
 }
+
 header nav a:hover {
    padding: 15px 17px;
    background-color: var(--button-primary);
@@ -185,7 +193,7 @@ header nav .nav-sections ul {
   padding-left: 0;
   font-size: var(--body-font-size-s);
   justify-content: flex-end;
-  font-family: SansSerif;
+  font-family: var(--font-family-serif);
 }
 
 header nav .nav-sections li {
